@@ -1,5 +1,31 @@
+body {
+    padding: 30px;
+    margin: 15px;
+    text-align: center;
+    color: #fff;
+    background-color: #5d576b;
+}
+
+.left {
+    text-align: left;
+    display: inline-flex;
+}
+
 .form-group {
     max-width: 50%;
     margin: 20px;
     display: inline-block;
+}
+
+.btn,
+.btn-primary {
+    background-color: #bc412b;
+    box-shadow: none;
+    border-color: #bc412b;
+}
+
+.btn:hover,
+.btn-primary:hover {
+    background-color: #9bc1bc;
+    border-color: #9bc1bc;
 }

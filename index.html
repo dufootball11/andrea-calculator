@@ -10,27 +10,30 @@
     <body>
 
         <header>
-            Behold my calculator:
+            <h1>Behold my calculator:</h1>
         </header>
 
         <div class="form-group row">
-            <label for="example-number-input" class="col-2 col-form-label">First number:</label>
+            <label for="number-input-1" class="col-2 col-form-label left">First number:</label>
             <div class="col-4">
-                <input class="form-control" type="number" value="" id="numberOne">
+                <input class="form-control" type="number" step=any value="" id="numberOne">
             </div>
         </div>
 
         <div class="form-group row">
-            <label for="example-number-input" class="col-2 col-form-label">Second number:</label>
+            <label for="number-input-2" class="col-2 col-form-label left">Second number:</label>
             <div class="col-4">
-                <input class="form-control" type="number" value="" id="numberTwo">
+                <input class="form-control" type="number" step=any value="" id="numberTwo">
             </div>
         </div>
 
-        <button onClick="displaySum();" type="button" class="btn btn-primary">Primary</button>
+        <div class="button">
+            <span><button onClick="displaySum();" type="button" class="btn btn-primary">Add em</button></span>
+        </div>
 
-        <div id="numberOutput">
-            <p></p>
+        <div class="sum">
+            <h2>And the answer is:</h2>
+            <p id="numberOutput"></p>
         </div>
 
     </body>
