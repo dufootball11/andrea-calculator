@@ -5,18 +5,42 @@
 4. Display 
 */
 
-function addNums(){
-    var numOne = parseFloat(document.getElementById("numberOne").value);
-    var numTwo = parseFloat(document.getElementById("numberTwo").value);
-    if(isNaN(numOne) || isNaN(numTwo)){
-        sum = "Whoops, something looks wrong there"
-    } else {
-        sum = numOne + numTwo;
-    }
-    return sum;
+//Make a variable to store index value of math type chosen
+//Use that variable to do fancy maths 
+
+function testing(){
+     //Something wrong here
+    console.log(mathType);
 };
 
-function displaySum(){
-    var output = addNums();
+//This stuff is not running right now:
+
+function mathNums(){
+    var mathType = document.getElementById("mathSelect").selectedIndex;
+    var numOne = parseFloat(document.getElementById("numberOne").value);
+    var numTwo = parseFloat(document.getElementById("numberTwo").value);
+
+    if(isNaN(numOne) || isNaN(numTwo)){
+        result = "Whoops, something looks wrong there";
+    } else if (mathType === 0) {
+        result = numOne + numTwo;
+    } else if (mathType === 1) {
+        result = numOne - numTwo;
+    } else if (mathType === 2) {
+        result = numOne * numTwo
+    } else if (mathType === 3) {
+        if (numTwo == 0) {
+            result = "You try to divide by 0 often? Not the best"
+        } else {
+        result = numOne / numTwo
+        };
+    };
+    return result;
+};
+
+function displayResult(){
+    var output = mathNums();
     document.getElementById("numberOutput").innerHTML = output;
 };
+
+
