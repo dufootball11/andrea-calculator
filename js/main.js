@@ -14,7 +14,7 @@ function mathNums(){
     var numTwo = parseFloat(document.getElementById("numberTwo").value);
 
     if(isNaN(numOne) || isNaN(numTwo)){
-        result = "Whoops, something looks wrong there";
+        result = "You NaN! (Need a number)";
     } else if (mathType === 0) {
         result = numOne + numTwo;
     } else if (mathType === 1) {
