@@ -1,7 +1,6 @@
 /* 
 Styling things to change still:
 1. Placement of input labels (want aligned left not center)
-2. 
 */
 
 body {
@@ -10,6 +9,7 @@ body {
     text-align: center;
     color: #fff;
     background-color: #5d576b;
+    font-family: 'Dosis', sans-serif;
 }
 
 .left {
@@ -44,9 +44,11 @@ body {
 h2,
 h3 {
     margin: 20px;
+    font-size: 36px;
 }
 
 h1 {
+    font-family: 'Staatliches', cursive;
     font-size: 56px;
     background: -webkit-linear-gradient(right, #f4f1bb, #bc412b);
     -webkit-background-clip: text;

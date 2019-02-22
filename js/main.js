@@ -8,13 +8,6 @@
 //Make a variable to store index value of math type chosen
 //Use that variable to do fancy maths 
 
-function testing(){
-     //Something wrong here
-    console.log(mathType);
-};
-
-//This stuff is not running right now:
-
 function mathNums(){
     var mathType = document.getElementById("mathSelect").selectedIndex;
     var numOne = parseFloat(document.getElementById("numberOne").value);
@@ -33,10 +26,10 @@ function mathNums(){
             result = "You try to divide by 0 often? Not the best"
         } else {
         result = numOne / numTwo
-        };
-    };
+        }; //end if
+    }; //end if
     return result;
-};
+}; //end function
 
 function displayResult(){
     var output = mathNums();
