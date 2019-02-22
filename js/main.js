@@ -8,7 +8,11 @@
 function addNums(){
     var numOne = parseFloat(document.getElementById("numberOne").value);
     var numTwo = parseFloat(document.getElementById("numberTwo").value);
-    sum = numOne + numTwo;
+    if(isNaN(numOne) || isNaN(numTwo)){
+        sum = "Whoops, something looks wrong there"
+    } else {
+        sum = numOne + numTwo;
+    }
     return sum;
 };
 
