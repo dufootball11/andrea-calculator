@@ -23,6 +23,11 @@ body {
     display: inline-block;
 }
 
+.container1 {
+    display: flex;
+    justify-content: center;
+}
+
 .btn,
 .btn-primary {
     background-color: #bc412b;
@@ -40,3 +45,10 @@ h2,
 h3 {
     margin: 20px;
 }
+
+h1 {
+    font-size: 56px;
+    background: -webkit-linear-gradient(right, #f4f1bb, #bc412b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
