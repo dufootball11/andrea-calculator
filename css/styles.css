@@ -1,3 +1,9 @@
+/* 
+Styling things to change still:
+1. Placement of input labels (want aligned left not center)
+2. 
+*/
+
 body {
     padding: 30px;
     margin: 15px;
@@ -28,4 +34,9 @@ body {
 .btn-primary:hover {
     background-color: #9bc1bc;
     border-color: #9bc1bc;
+}
+
+h2,
+h3 {
+    margin: 20px;
 }
