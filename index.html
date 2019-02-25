@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/styles.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Dosis|Staatliches" rel="stylesheet"> 
+        <title>My Calculator</title>
+    </head>
+
+    <body>
+
+        <header>
+            <h1>Behold my calculator:</h1>
+        </header>
+
+        <div class="form-group">
+            <label for="mathSelect">Choose a math:</label>
+            <select class="form-control" id="mathSelect">
+                <option >Add</option>
+                <option>Subtract</option>
+                <option>Multiply</option>
+                <option>Divide</option>
+            </select>
+        </div>
+
+        <div class="container1">
+            <div class="form-group row">
+                <label for="number-input-1" class="col-2 col-form-label left">First number:</label>
+                <div class="col-4">
+                    <input class="form-control" type="number" step=any value="" id="numberOne">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="number-input-2" class="col-2 col-form-label left">Second number:</label>
+                <div class="col-4">
+                    <input class="form-control" type="number" step=any value="" id="numberTwo">
+                </div>
+            </div>
+        </div>
+
+        <div class="button">
+            <span><button onClick="displayResult();" type="button" class="btn btn-primary">Math 'em</button></span>
+        </div>
+
+        <div class="sum">
+            <h3>And the answer is:</h3>
+            <h2 id="numberOutput"></h2>
+        </div>
+
+    </body>
+
+    <script type="text/javascript" src="js/main.js"></script>
+
+</html>
